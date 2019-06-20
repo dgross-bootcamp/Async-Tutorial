@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NYT Search</title>
+  </head>
+
+  <body>
+    <h1>New York Times Search</h1>
+    <div>
+      <label for="search">Search Term:</label>
+      <input type="text" id="search-term" />
+    </div>
+    <div>
+      <label for="count">Number of Records to Retrieve:</label>
+      <select id="article-count">
+        <option selected value="1">1</option>
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+    <div>
+      <label for="start-year">Start Year (Optional):</label>
+      <input type="text" id="start-year" />
+    </div>
+    <div>
+      <label for="end-year">End Year (Optional):</label>
+      <input type="text" id="end-year" />
+    </div>
+    <button type="submit" id="run-search">Search</button>
+    <button id="clear-all">Clear Results</button>
+    <div id="article-section"></div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="nyt.js"></script>
+  </body>
+</html>
